@@ -1,26 +1,77 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Asheville66</title>
+
+<title>Asheville66 | Architecture, Engineering & Construction</title>
+
+<meta name="description" content="Asheville66 is a luxury architecture, engineering, construction, development, branding and consulting company serving Asheville, North Carolina and beyond.">
+
+<meta name="keywords" content="Asheville66, Asheville Architecture, Asheville Construction, Asheville Engineering, Luxury Construction Asheville, Custom Homes Asheville, Commercial Construction Asheville, Western North Carolina Development">
+
+<meta name="author" content="Asheville66">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#000000">
+
+<link rel="canonical" href="https://asheville66.com">
+<link rel="icon" type="image/png" href="logo.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Asheville66 | Architecture, Engineering & Construction">
+<meta property="og:description" content="Luxury architecture, engineering, construction, development and consulting services in Asheville, North Carolina.">
+<meta property="og:image" content="logo.png">
+<meta property="og:url" content="https://asheville66.com">
+<meta property="og:site_name" content="Asheville66">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Asheville66">
+<meta name="twitter:description" content="Luxury architecture, engineering and construction services.">
+<meta name="twitter:image" content="logo.png">
+
+<!-- Schema -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Asheville66",
+  "url":"https://asheville66.com",
+  "logo":"https://asheville66.com/logo.png",
+  "description":"Luxury architecture, engineering, construction and development services.",
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"Asheville",
+    "addressRegion":"NC",
+    "addressCountry":"US"
+  },
+  "areaServed":"North Carolina"
+}
+</script>
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-html,
-body{
-    width:100%;
-    height:100%;
-    background:#000;
-    overflow:hidden;
-    font-family:Arial, Helvetica, sans-serif;
+html{
+    scroll-behavior:smooth;
 }
+
+body{
+    background:#000;
+    color:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* HERO */
 
 .hero{
     width:100%;
@@ -29,26 +80,52 @@ body{
     justify-content:center;
     align-items:center;
     position:relative;
+    text-align:center;
 }
 
 .logo{
-    width:min(80vw, 650px);
+    width:min(85vw,700px);
     height:auto;
-    display:block;
     animation:fadeIn 2s ease;
 }
 
+/* Hidden H1 for SEO */
+
+h1{
+    position:absolute;
+    left:-9999px;
+    top:-9999px;
+}
+
+/* Tagline */
+
 .tagline{
     position:absolute;
-    bottom:60px;
-    left:50%;
-    transform:translateX(-50%);
-    color:#888;
-    font-size:14px;
-    letter-spacing:4px;
-    text-transform:uppercase;
+    bottom:70px;
+    width:100%;
     text-align:center;
+    color:#8f8f8f;
+    letter-spacing:6px;
+    font-size:14px;
+    text-transform:uppercase;
+    padding:0 20px;
 }
+
+/* Scroll Indicator */
+
+.scroll{
+    position:absolute;
+    bottom:25px;
+    width:100%;
+    text-align:center;
+    color:#666;
+    font-size:12px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    animation:bounce 2s infinite;
+}
+
+/* Animations */
 
 @keyframes fadeIn{
     from{
@@ -61,6 +138,20 @@ body{
     }
 }
 
+@keyframes bounce{
+    0%,20%,50%,80%,100%{
+        transform:translateY(0);
+    }
+    40%{
+        transform:translateY(-10px);
+    }
+    60%{
+        transform:translateY(-5px);
+    }
+}
+
+/* Mobile */
+
 @media(max-width:768px){
 
     .logo{
@@ -68,25 +159,42 @@ body{
     }
 
     .tagline{
-        font-size:12px;
-        letter-spacing:2px;
-        bottom:40px;
-        padding:0 20px;
+        font-size:11px;
+        letter-spacing:3px;
+        bottom:60px;
     }
+
+    .scroll{
+        font-size:10px;
+    }
+
 }
+
 </style>
 
 </head>
+
 <body>
 
+<h1>
+Asheville66 Architecture Engineering Construction Asheville North Carolina
+</h1>
+
 <section class="hero">
-    <img src="img/logo.png" alt="Asheville66" class="logo">
+
+    <img src="img/logo.png" alt="Asheville66 Logo" class="logo">
 
     <div class="tagline">
         ARCHITECTURE • ENGINEERING • CONSTRUCTION
     </div>
+
+    <div class="scroll">
+        EST. 66
+    </div>
+
 </section>
 
 </body>
 </html>
 ```
+
